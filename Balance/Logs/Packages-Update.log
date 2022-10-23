@@ -53,3 +53,12 @@ Update Mode: mergeDefaultDependencies
 
 The following packages were added:
   com.unity.shadergraph@12.1.0
+
+=== Sun Oct 23 00:37:07 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.2d.psdimporter@2.1.11
+  com.unity.recorder@2.5.7
