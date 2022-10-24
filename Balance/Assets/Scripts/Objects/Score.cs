@@ -1,20 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
     public Text scoreText;
+    //public TextMeshPro scoreText;
 
-    float score;
-    public void IncreaseScore(float amount)
+    float score = 0;
+    public void IncreaseScore()
     {
-        score += amount;
+        score += 1;
         UpdateScoreDisplay();
     }
     public void UpdateScoreDisplay()
     {
         scoreText.text = "Score: " + score;
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Point"))
+        {
+            IncreaseScore();
+        }
     }
 }
