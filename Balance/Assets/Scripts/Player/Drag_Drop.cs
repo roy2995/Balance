@@ -38,6 +38,6 @@ public class Drag_Drop : MonoBehaviour
     void OnMouseDrag()
     {
         transform.position = GetMouseAsWorldPoint() + mOffset;
-        transform.position = new Vector3(transform.position.x,transform.position.y,0);
+        transform.position = new Vector3(transform.position.x,transform.position.y,1129);
     }
 }

@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator spawnMinion(float intreval, GameObject box){
         yield return new WaitForSeconds(intreval);
-        GameObject newMinion = Instantiate(box, new Vector3(Random.Range(-1.5f, 1.5f), 3.5f, 0), Quaternion.identity);
+        GameObject newMinion = Instantiate(box, new Vector3(Random.Range(991f, 1010f), 177f, 1129), Quaternion.identity);
         StartCoroutine(spawnMinion(intreval, box));
     }
 
