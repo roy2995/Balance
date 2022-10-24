@@ -621,6 +621,8 @@ GameObject:
   - component: {fileID: 834416365}
   - component: {fileID: 834416367}
   - component: {fileID: 834416368}
+  - component: {fileID: 834416369}
+  - component: {fileID: 834416370}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -649,7 +651,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834416364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 1001.98, y: 185.8, z: 1131.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -658,7 +660,7 @@ Transform:
   - {fileID: 832392089}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!54 &834416367
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -692,6 +694,38 @@ MonoBehaviour:
   Speed: 20
   stabilization: 400
   damping: 20
+--- !u!95 &834416369
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834416364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 82a2914d8f86c62488456950c8330e38, type: 3}
+  m_Controller: {fileID: 9100000, guid: c2415fd0bdec48c4d9d69e47b9a38460, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &834416370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834416364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f182258ed36c0404b9d98be51a65d77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &909811930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1143,7 +1177,7 @@ PrefabInstance:
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.97998047
+      value: 0.97998047
       objectReference: {fileID: 0}
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
@@ -1153,12 +1187,12 @@ PrefabInstance:
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.800049
+      value: 7.800049
       objectReference: {fileID: 0}
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
@@ -1168,7 +1202,7 @@ PrefabInstance:
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4456964216456257520, guid: 9d91b779877cb0745a3f7854a8b9864c,
         type: 3}
@@ -4125,9 +4159,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668370420432}
-  m_LocalRotation: {x: -0, y: 0.99999964, z: -0, w: 0.0008727885}
-  m_LocalPosition: {x: 0, y: -13.900009, z: 0.19995117}
-  m_LocalScale: {x: 17.413502, y: 17.413502, z: 17.413502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: 0, y: -13.900009, z: -0.19995117}
+  m_LocalScale: {x: 17.413525, y: 17.413502, z: 17.413525}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485139636}
@@ -4161,7 +4195,7 @@ Transform:
   - {fileID: 100129365}
   m_Father: {fileID: 834416366}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 179.9, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &5099688720342696110
 GameObject:
   m_ObjectHideFlags: 0
