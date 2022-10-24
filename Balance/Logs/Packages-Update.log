@@ -62,3 +62,13 @@ Update Mode: mergeDefaultDependencies
 The following packages were added:
   com.unity.2d.psdimporter@2.1.11
   com.unity.recorder@2.5.7
+
+=== Sun Oct 23 17:48:39 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.3.4
+  com.unity.ext.nunit@1.0.0
+  com.unity.postprocessing@2.2.2
