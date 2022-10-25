@@ -9,11 +9,18 @@ public class Spawner : MonoBehaviour
 
     public float swarmerInterval = 3.5f;
 
+    public Transform spawnerPosition;
+    private float balanceStickLeftLimitDistance = -29f, balanceStickRightLimitDistance = 29f;
+    private float leftCubeSpawnPosition, rightCubeSpawnPosition;
 
-    private IEnumerator spawnMinion(float intreval, GameObject box){
+    private IEnumerator spawnMinion(float intreval, GameObject box) {
+        leftCubeSpawnPosition = balanceStickLeftLimitDistance + spawnerPosition.position.x;
+        rightCubeSpawnPosition = balanceStickRightLimitDistance + spawnerPosition.position.x;
+
         yield return new WaitForSeconds(intreval);
-        GameObject newMinion = Instantiate(box, new Vector3(Random.Range(970f, 1032f), 212.8f, 1124), Quaternion.identity);
+        GameObject newMinion = Instantiate(box, new Vector3(Random.Range(leftCubeSpawnPosition, rightCubeSpawnPosition), spawnerPosition.position.y, spawnerPosition.position.z), Quaternion.identity);
         StartCoroutine(spawnMinion(intreval, box));
+
     }
 
     private void Start() {
