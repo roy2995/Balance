@@ -37,7 +37,17 @@ public class Player_Move : MonoBehaviour
 
     private void MovePlayer()
     {
+        
         Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
         PlayerBody.velocity = new Vector3(MoveVector.x, PlayerBody.velocity.y, MoveVector.z);
+
+        if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        {
+            float runningSpeed = Speed * 2f;
+
+            MoveVector = transform.TransformDirection(PlayerMovementInput) * runningSpeed;
+            PlayerBody.velocity = new Vector3(MoveVector.x, PlayerBody.velocity.y, MoveVector.z);
+        }
+        
     }
 }
